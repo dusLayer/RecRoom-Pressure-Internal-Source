@@ -8,7 +8,7 @@ namespace vars {
 
     uintptr_t ga;
     uintptr_t up;
-
+//Credits to dreamcache. I don't leak my il2cpp api's
     namespace strings {
         const char* domain = "48 83 EC 28 48 63 05 ? ? ? ? 48 8D 0D ? ? ? ? 4C 8B 05 ? ? ? ? 48 8D 15 ? ? ? ? 8B 0C 08 48 8B 44 24 28 48 C1 E1 06 48 03 CA 48 3B C1 73 0A 48 8B 44 24 28 48 3B C2 73 29 49 63 40 3C 42 8B 4C ? 50";
         const char* thread = "40 56 48 83 EC 20 48 8B F1 48 8B 0D ? ? ? ? 8B 09 FF 15 ? ? ? ? 48 85 C0 75 5F 48 89 5C 24 ? 48 89 7C 24 ? FF 15 ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? 48 8B 0D ? ? ? ? 48 8B D8 E8 ? ? ? ? 48 8B D3 48 8B C8 48 8B F8 E8 ? ? ? ? 48 8B 4F 10 48 8B D6 C7 41 ? ? ? ? ? 48 8B CF E8 ? ? ? ? 48 8B 5C 24 ? 48 8B C7 48 8B 7C 24 ? 48 83 C4 20";
