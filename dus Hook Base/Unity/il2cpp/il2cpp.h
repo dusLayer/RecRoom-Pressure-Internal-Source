@@ -4,7 +4,7 @@
 #include <string>
 
 std::map<std::string, uintptr_t> apis;
-
+//Credits to dreamcache. I don't leak my il2cpp api's
 namespace il2cppAPI {
 
     void api() {
@@ -37,7 +37,7 @@ HMODULE asm_ = LoadLibraryA("GameAssembly.dll");
 uintptr_t domain, thread, methodptr, methodinfo;
 
 
-
+//Credits to dreamcache. I don't leak my il2cpp api's
 void resolve()
 {
 
@@ -56,7 +56,7 @@ void resolve()
 }
 
 
-
+//Credits to dreamcache. I don't leak my il2cpp api's
 Il2CppDomain* getdom() { return spfc(spoof, (Il2CppDomain * (*)())(domain)); }
 Il2CppThread* attach(Il2CppDomain* d) { return spfc(spoof, (Il2CppThread * (*)(Il2CppDomain*))(thread), d); }
 const char* img_name(const Il2CppImage* img) { return spfc(spoof, (const char* (*)(const Il2CppImage*))((uintptr_t)asm_ + apis["il2cpp_image_get_name"]), img); }
